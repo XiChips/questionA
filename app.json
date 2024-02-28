@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/assit/assit",
+    "pages/public/public",
+    "pages/analysis/analysis",
+    "pages/my/my"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "面试题A",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "indicatorDots": true,
+    "vertical": false,
+    "autoplay": false,
+    "interval": 2000,
+    "duration": 500
+  },
+  "tabBar": {
+    "textColor": "#dddddd",
+    "selectedColor": "#49a9ee",
+    "backgroundColor": "#ffffff",
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/assit/assit",
+        "text": "助手"
+      },
+      {
+        "pagePath": "pages/analysis/analysis"
+      },
+      {
+        "pagePath": "pages/my/my"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

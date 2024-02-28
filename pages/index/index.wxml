@@ -1,0 +1,107 @@
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <view class="greeting">
+    早上好！张三先生
+    <view class="message">
+     <image src="../../static/images/message.png" mode="scaleToFill"/>
+     <view class="dot">{{count}}</view>
+    </view>
+  </view>
+  <swiper indicator-dots="true" indicator-color="transparent" circular="false" indicator-active-color="rgb(135,192,1)" autoplay="true" interval="8000" duration="{{duration}}">
+    <block wx:for="{{imgs}}" wx:key="*this">
+      <swiper-item>
+        <view class="">
+          <image src="{{item}}" mode="scaleToFill" />
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="list">
+    <view>
+      <image src="../../static/images/icon2.png" mode="widthFix" />功能1
+    </view>
+    <view>
+      <image src="../../static/images/icon3.png" mode="widthFix" />功能2
+    </view>
+    <view>
+      <image src="../../static/images/icon4.png" mode="widthFix" />功能3
+    </view>
+    <view>
+      <image src="../../static/images/icon5.png" mode="widthFix" />功能4
+    </view>
+    <view>
+      <image src="../../static/images/icon6.png" mode="widthFix" />功能5
+    </view>
+  </view>
+  <view class="list2">
+    <view>
+      <image src="../../static/images/icon7.png" mode="widthFix" />功能A
+    </view>
+    <view bind:tap="openBox">
+      <image src="../../static/images/icon8.png" mode="widthFix" />功能B
+    </view>
+    <view>
+      <image src="../../static/images/icon9.png" mode="widthFix" />功能C
+    </view>
+    <view>
+      <image src="../../static/images/icon10.png" mode="widthFix" />功能D
+    </view>
+    <view>
+      <image src="../../static/images/icon11.png" mode="widthFix" />功能E
+    </view>
+    <view>
+      <image src="../../static/images/icon12.png" mode="widthFix" />功能F
+    </view>
+    <view>
+      <image src="../../static/images/icon13.png" mode="widthFix" />功能G
+    </view>
+    <view>
+      <image src="../../static/images/icon14.png" mode="widthFix" />功能H
+    </view>
+    <view style="border-bottom: none;">
+      <image src="../../static/images/icon15.png" mode="widthFix" />功能I
+    </view>
+    <view style="border-bottom: none;">
+      <image src="../../static/images/icon16.png" mode="widthFix" />功能J
+    </view>
+  </view>
+
+  <view class="mask" bind:tap="closeBox" wx:if="{{visible}}"></view>
+  <view wx:if="{{visible}}" class="popBox">
+    <view class="title">
+      功能B
+    </view>
+    <view class="list3">
+      <view>
+        <image src="../../static/images/icon17.png" mode="widthFix" />功能1
+      </view>
+      <view bind:tap="openBox">
+        <image src="../../static/images/icon18.png" mode="widthFix" />功能2
+      </view>
+      <view>
+        <image src="../../static/images/icon19.png" mode="widthFix" />功能3
+      </view>
+      <view>
+        <image src="../../static/images/icon20.png" mode="widthFix" />功能4
+      </view>
+      <view>
+        <image src="../../static/images/icon21.png" mode="widthFix" />功能5
+      </view>
+      <view>
+        <image src="../../static/images/icon22.png" mode="widthFix" />功能6
+      </view>
+      <view>
+        <image src="../../static/images/icon23.png" mode="widthFix" />功能7
+      </view>
+      <view>
+        <image src="../../static/images/icon24.png" mode="widthFix" />功能8
+      </view>
+      <view style="border-bottom: none;">
+        <image src="../../static/images/icon25.png" mode="widthFix" />功能9
+      </view>
+      <view style="border-bottom: none;">
+        <image src="../../static/images/icon26.png" mode="widthFix" />功能10
+      </view>
+    </view>
+  </view>
+</view>
